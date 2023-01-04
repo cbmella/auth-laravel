@@ -37,7 +37,7 @@ export default defineComponent({
 <template>
   <Carousel :settings="settings" :breakpoints="breakpoints">
     <Slide v-for="slide in 10" :key="slide">
-      <img class="overflow-hidden brand-img" src="images/slider/brand.png" alt="brand icon" />
+      <img class="overflow-hidden brand-img" src="https://via.placeholder.com/150" alt="brand icon" />
     </Slide>
 
     <template #addons>
