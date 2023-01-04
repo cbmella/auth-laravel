@@ -958,11 +958,11 @@ input:-webkit-autofill:focus {
 }
 
 .close-light {
-	background-image: url(../images/icons/closelight.jpg);
+	background-image: url('https://via.placeholder.com/150');
 }
 
 .close-dark {
-	background-image: url(../images/icons/closeDark.png);
+	background-image: url('https://via.placeholder.com/150');
 }
 
 .modal a.close-modal {
