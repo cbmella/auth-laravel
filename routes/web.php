@@ -1,31 +1,30 @@
 <?php
 
+use App\Http\Controllers\WorkController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
-use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
-use Corcel\Model\Post as Post;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
 Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-        'posts' => Post::type('post')->published()->get('post_title'),
-    ]);
-});
+    return Inertia::render('About');
+})->name('sobre-mi');
+
+Route::get('/resumen', function () {
+    return Inertia::render('Resume');
+})->name('resumen');
+
+Route::get('trabajos', [WorkController::class, 'index'])->name('trabajos');
+
+Route::get('blog', [PostController::class, 'blog'])->name('blog');
+Route::get('blog/{post}', [PostController::class, 'article'])->name('article');
+
+
+/* Route::get('/contacto', function () {
+    return Inertia::render('Contact');
+})->name('contacto');
+ */
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
@@ -37,4 +36,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

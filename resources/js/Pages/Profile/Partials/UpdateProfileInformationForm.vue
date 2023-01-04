@@ -13,9 +13,11 @@ const props = defineProps({
 
 const user = usePage().props.value.auth.user;
 
+console.log(user);
+
 const form = useForm({
-    name: user.name,
-    email: user.email,
+    display_name: user.display_name,
+    user_email: user.user_email,
 });
 </script>
 
@@ -31,34 +33,34 @@ const form = useForm({
 
         <form @submit.prevent="form.patch(route('profile.update'))" class="mt-6 space-y-6">
             <div>
-                <InputLabel for="name" value="Name" />
+                <InputLabel for="display_name" value="display_name" />
 
                 <TextInput
-                    id="name"
+                    id="display_name"
                     type="text"
                     class="mt-1 block w-full"
-                    v-model="form.name"
+                    v-model="form.display_name"
                     required
                     autofocus
-                    autocomplete="name"
+                    autocomplete="display_name"
                 />
 
-                <InputError class="mt-2" :message="form.errors.name" />
+                <InputError class="mt-2" :message="form.errors.display_name" />
             </div>
 
             <div>
-                <InputLabel for="email" value="Email" />
+                <InputLabel for="user_email" value="Email" />
 
                 <TextInput
-                    id="email"
+                    id="user_email"
                     type="email"
                     class="mt-1 block w-full"
-                    v-model="form.email"
+                    v-model="form.user_email"
                     required
-                    autocomplete="email"
+                    autocomplete="user_email"
                 />
 
-                <InputError class="mt-2" :message="form.errors.email" />
+                <InputError class="mt-2" :message="form.errors.user_email" />
             </div>
 
             <div v-if="props.mustVerifyEmail && user.email_verified_at === null">
