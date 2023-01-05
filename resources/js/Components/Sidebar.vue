@@ -12,19 +12,19 @@
                 Desarrollador Web </h3>
             <div class="flex justify-center space-x-3">
                 <!-- twitter icon and link -->
-                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+   <!--              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
                     <span class="socialbtn text-[#1C9CEA]">
                         <i class="fa-brands fa-twitter"></i>
                     </span>
-                </a>
+                </a> -->
                 <!-- linkedin icon and link -->
-                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                <a href="www.linkedin.com/in/cesar-bugueno-mella" target="_blank" rel="noopener noreferrer">
                     <span class="socialbtn text-[#0072b1]">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </span>
                 </a>
                 <!-- wasp icon and link -->
-                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/+56938730282" target="_blank" rel="noopener noreferrer">
                     <span class="socialbtn text-[#0072b1]">
                         <i class="fa-brands fa-whatsapp"></i>
                     </span>
@@ -47,7 +47,7 @@
                     </span>
                     <div class="text-left ml-2.5">
                         <p class="text-xs text-[#44566C] dark:text-[#A6A6A6]"> Email </p>
-                        <p class="dark:text-white">yo@cesarbuguenomella.dev</p>
+                        <p class="dark:text-white">info@cesarbuguenomella.dev</p>
                     </div>
                 </div>
                 <div class="flex border-b border-[#E3E3E3] dark:border-[#3D3A3A] py-2.5">
