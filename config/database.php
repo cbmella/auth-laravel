@@ -71,7 +71,7 @@ return [
             'password'  => env('DB_PASSWORD', ''),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
-            'prefix'    => 'JAIpW_',
+            'prefix'    => env('WP_PREFIX', 'wp_'),
             'strict'    => false,
             'engine'    => null,
         ],
