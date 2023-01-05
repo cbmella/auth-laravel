@@ -71,9 +71,9 @@
             </div>
             <!-- personal infomation end-->
             <!-- dowanload button -->
-            <button class="dowanload-btn">
-                <img class="mr-3" src="https://via.placeholder.com/50" alt="icon" />
-                Descargar CV </button>
+            <a href="https://admin.cesarbuguenomella.dev/wp-content/uploads/2023/01/CV-CESAR-BUGUENO.pdf" class="dowanload-btn">
+                <i class="mr-3 fa-solid fa-file-pdf"></i>
+                Descargar CV </a>
         </div>
     </div>
 </template>
