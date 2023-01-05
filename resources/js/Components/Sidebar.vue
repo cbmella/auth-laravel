@@ -71,7 +71,7 @@
             </div>
             <!-- personal infomation end-->
             <!-- dowanload button -->
-            <a download href="https://admin.cesarbuguenomella.dev/wp-content/uploads/2023/01/CV-CESAR-BUGUENO.pdf" class="dowanload-btn">
+            <a target="_blank" href="https://admin.cesarbuguenomella.dev/wp-content/uploads/2023/01/CV-CESAR-BUGUENO.pdf" class="dowanload-btn" download>
                 <i class="mr-6 fa-solid fa-file-pdf"></i>
                 Descargar CV </a>
         </div>
