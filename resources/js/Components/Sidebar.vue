@@ -18,7 +18,7 @@
                     </span>
                 </a> -->
                 <!-- linkedin icon and link -->
-                <a href="www.linkedin.com/in/cesar-bugueno-mella" target="_blank" rel="noopener noreferrer">
+                <a href="http://linkedin.com/in/cesar-bugueno-mella" target="_blank" rel="noopener noreferrer">
                     <span class="socialbtn text-[#0072b1]">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </span>
